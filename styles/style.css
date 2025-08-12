@@ -1,14 +1,6 @@
-:root {
-  --page-bg: url(../images/cover-image-dark.png);
-}
-@media (prefers-color-scheme: light) {
-  :root {
-    --page-bg: url(../images/cover-image-light.png);
-  }
-}
 .page {
+  /* Свойство я убрал, надеюсь ничего не сломается */
   margin: 0 auto;
-  block-size: 100vh;
   font-size: 18px;
   line-height: 23.4px;
   font-style: normal;
@@ -22,7 +14,7 @@
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
 }
-header {
+.header {
   block-size: 100vh;
   padding: 10px;
   display: grid;
@@ -46,6 +38,9 @@ header {
   text-transform: lowercase;
   cursor: pointer;
 }
+.header__theme-menu-button:hover{
+  border: 1px solid var(--button-hover-color);
+}
 .header__theme-menu-button_active {
   border: 1px solid var(--button-hover-color);
 }
@@ -55,8 +50,9 @@ header {
 .header__theme-menu-button:focus-visible {
   border-block-end: 1px solid var(--accent-title-color);
 }
+
 .header__dot {
-  display: var(--rec);
+  display: block;
   color: var(--accent-title-color);
   justify-self: end;
   align-self: start;
@@ -121,17 +117,16 @@ header {
 }
 .content__text {
   padding-top: 10px;
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--text-shadow-color);    /* Сделанно, ивините что раньше не заметил дубликат */
 }
 .content__text__title {
   font-size: 18px;
   color: var(--subtitle-text-color);
   margin-top: 20px;
 }
-.accnet__text {
-  text-decoration: none;
-  text-shadow: 2px 2px 0 var(--text-shadow-color);
-}
-.content__text__subtitle {
+/* Я не удалил эти параметры, переделал их под новый селектор, выполненно */
+.font-low {
   font-size: 18px;
   font-weight: normal;
   color: var(--subtitle-text-color);
@@ -140,7 +135,7 @@ header {
   margin-bottom: 20px;
 }
 .tips {
-  display: grid;
+/* Убрал */
   gap: 20px;
 }
 .article__title {
@@ -181,6 +176,7 @@ header {
   color: var(--header-text-color);
   text-shadow: 2px 2px 0 var(--text-shadow-color);
   font-size: var(--header-fs-mobile);
+  line-height: 83%;
 }
 @media (min-width: 768px) {
   .header {
@@ -203,7 +199,7 @@ header {
     margin-block-start: 108px;
   }
   .header__title {
-    position: relative;
+    /* Сделанно */
     inset-inline-start: -20px;
     font-size: var(--header-fs-desk);
   }
@@ -211,8 +207,8 @@ header {
     width: 50%;
     height: min-content;
     justify-self: end;
-    position: relative;
-    top: 108px;
+    margin-top: 161px;
+    /* izmenil na margin, sdelanno */
   }
   .content {
     gap: 59px;

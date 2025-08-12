@@ -1,4 +1,12 @@
 :root {
+  :root {
+  --page-bg: url(../images/cover-image-dark.png);
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --page-bg: url(../images/cover-image-light.png);
+  }
+}
   --main-text-color: #f1b2ce;
   --main-picture: url(../images/cover-image-dark.png);
   --header-text-color: #db00ff;
@@ -10,5 +18,5 @@
   --header-fs-desk: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --button-hover-color: rgba(255, 0, 112, 1);
   --main-bg-color: #000028;
-  --rec: block;
+  /* Думаю свойство было бесполезным, хз зачем добавлял */
 }

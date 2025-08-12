@@ -35,7 +35,7 @@ header {
 }
 .header__theme-menu-list {
   justify-self: end;
-  gap: 10px;
+  gap: 12px;
 }
 .header__theme-menu-button {
   background-color: transparent;
@@ -212,10 +212,10 @@ header {
     height: min-content;
     justify-self: end;
     position: relative;
-    top: 60px;
+    top: 108px;
   }
   .content {
-    gap: 80px;
+    gap: 59px;
     padding-inline: 20px;
     margin-block-end: 51px;
   }
@@ -230,6 +230,9 @@ header {
   .content__texts {
     grid-row-start: 2;
     grid-column: span 2;
+  }
+  .content__text {
+  margin-bottom: 20px;
   }
   .article__title {
     margin-bottom: 20px;
@@ -272,11 +275,14 @@ header {
   .header__theme-menu {
     align-self: start;
     justify-self: center;
-    margin-block-start: -120px;
+    margin-block-start: -121px;
   }
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
+  }
+  .header__text {
+    top: 58px;
   }
   .content__part {
     column-gap: 10px;
@@ -284,6 +290,7 @@ header {
 
   .content__texts {
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
   .footer__text {

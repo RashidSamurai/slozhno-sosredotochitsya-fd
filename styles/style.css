@@ -143,9 +143,6 @@ header {
   display: grid;
   gap: 20px;
 }
-.article__block__title {
-  margin-bottom: 20px;
-}
 .article__title {
   font-size: 18px;
   color: var(--accent-title-color);
@@ -154,10 +151,10 @@ header {
   color: var(--subtitle-text-color);
   font-weight: bold;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 .content__texts {
   display: grid;
-  gap: 20px;
 }
 .pics {
   margin-bottom: 10px;

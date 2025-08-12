@@ -38,7 +38,7 @@
   text-transform: lowercase;
   cursor: pointer;
 }
-.header__theme-menu-button:hover{
+.header__theme-menu-button:hover {
   border: 1px solid var(--button-hover-color);
 }
 .header__theme-menu-button_active {
@@ -50,7 +50,6 @@
 .header__theme-menu-button:focus-visible {
   border-block-end: 1px solid var(--accent-title-color);
 }
-
 .header__dot {
   display: block;
   color: var(--accent-title-color);
@@ -148,6 +147,9 @@
   font-size: 18px;
   margin-bottom: 20px;
 }
+.article__block__title:not(:last-of-type) {
+  margin-top: 20px;
+}
 .content__texts {
   display: grid;
 }
@@ -226,6 +228,9 @@
   .content__texts {
     grid-row-start: 2;
     grid-column: span 2;
+  }
+  .article__block__title:not(:last-of-type) {
+    margin-top: 0px;
   }
   .content__text {
   margin-bottom: 20px;

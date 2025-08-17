@@ -1,30 +1,30 @@
 :root.theme-light {
-  --header-text-color: #ffc2e6;
   --main-picture: url(../images/cover-image-light.png);
-  --main-text-color: #353430;
-  --text-shadow-color: #ff8dcb;
-  --accent-title-color: #353430;
-  --title-decor-color: #ff8dcb;
+  --header-text-color: #ffc2e6;
   --subtitle-text-color: #353430;
+  --accent-title-color: #353430;
+  --text-shadow-color: #ff8dcb;
+  --title-decor-color: #ff8dcb;
+  --main-text-color: #353430;
+  --button-hover-color: rgba(53, 52, 48, 0.4);
   --main-bg-color: #fff1f7;
-  --button-hover-color: rgba(53, 52, 48, 1);
   --header-fs-desk: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --header-fs-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --rec: none;
 }
 @media (prefers-color-scheme: light) {
   :root {
-    --main-picture: url(../images/cover-image-light.png);
-    --subtitle-text-color: #353430;
-    --header-text-color: #ffc2e6;
     --main-text-color: #353430;
     --accent-title-color: #353430;
+    --main-picture: url(../images/cover-image-light.png);
     --title-decor-color: #ff8dcb;
+    --button-hover-color: rgba(53, 52, 48, 0.4);
+    --header-text-color: #ffc2e6;
+    --subtitle-text-color: #353430;
+    --header-fs-desk: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --header-fs-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     --text-shadow-color: #ff8dcb;
     --main-bg-color: #fff1f7;
-    --button-hover-color: rgba(53, 52, 48, 1);
-    --header-fs-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    --header-fs-desk: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --rec: none;
   }
 }

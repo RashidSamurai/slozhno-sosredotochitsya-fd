@@ -22,17 +22,18 @@
   margin-bottom: 38px;
 }
 .header__theme-menu {
-  margin-block-start: 51px;
   display: grid;
 }
 .header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 66px;
   justify-self: end;
-  gap: 12px;
+  gap: 10px;
 }
 .header__theme-menu-button {
   background-color: transparent;
   border: none;
-  margin-top: 12.8px;
   padding: 0px 12px;
   color: var(--accent-title-color);
   text-transform: lowercase;
@@ -42,7 +43,7 @@
   border: 1px solid var(--button-hover-color);
 }
 .header__theme-menu-button_active {
-  border: 1px solid var(--button-hover-color);
+    border: 1px solid var(--accent-title-color);
 }
 .header__theme-menu-button:focus {
   outline: none;
@@ -51,7 +52,7 @@
   border-block-end: 1px solid var(--accent-title-color);
 }
 .header__dot {
-  display: block;
+  display: var(--rec);
   color: var(--accent-title-color);
   justify-self: end;
   align-self: start;
@@ -117,21 +118,22 @@
 .content__text {
   padding-top: 10px;
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--text-shadow-color);    /* Сделанно, ивините что раньше не заметил дубликат */
+  color: var(--main-text-color);
+}
+.accnet__text {
+  text-shadow: 2px 2px 0 var(--text-shadow-color);
+  text-decoration: none;
 }
 .content__text__title {
   font-size: 18px;
   color: var(--subtitle-text-color);
   margin-top: 20px;
 }
-/* Я не удалил эти параметры, переделал их под новый селектор, выполненно */
-.font-low {
-  font-size: 18px;
-  font-weight: normal;
-  color: var(--subtitle-text-color);
+.content__text__title__last {
+  margin-top: 0px;
 }
-.content__text:not(:last-child) {
-  margin-bottom: 20px;
+.font-wight__low {
+  font-weight: normal;
 }
 .tips {
 /* Убрал */
@@ -198,8 +200,8 @@
     inset-block-start: 22px;
   }
   .header__theme-menu-list {
-    margin-block-start: 108px;
-  }
+    margin-block-start:173px;
+}
   .header__title {
     /* Сделанно */
     inset-inline-start: -20px;
@@ -210,7 +212,6 @@
     height: min-content;
     justify-self: end;
     margin-top: 161px;
-    /* izmenil na margin, sdelanno */
   }
   .content {
     gap: 59px;
@@ -276,14 +277,15 @@
   .header__theme-menu {
     align-self: start;
     justify-self: center;
-    margin-block-start: -121px;
   }
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
+    margin-block-start: 0;
   }
   .header__text {
     top: 58px;
+    margin-top: 114px;
   }
   .content__part {
     column-gap: 10px;

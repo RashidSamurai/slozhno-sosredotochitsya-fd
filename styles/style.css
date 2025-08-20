@@ -43,7 +43,7 @@
   border: 1px solid var(--button-hover-color);
 }
 .header__theme-menu-button_active {
-    border: 1px solid var(--accent-title-color);
+  border: 1px solid var(--accent-title-color);
 }
 .header__theme-menu-button:focus {
   outline: none;
@@ -129,14 +129,16 @@
   color: var(--subtitle-text-color);
   margin-top: 20px;
 }
-.content__text__title__last {
+.pics {
   margin-top: 0px;
+  /* Исправил */
 }
-.font-wight__low {
+.title-sm {
+  /* Искалм минут 10 че то оригинальное, ну вот вроде профи тоже юзают такое */
   font-weight: normal;
 }
 .tips {
-/* Убрал */
+  /* Убрал */
   gap: 20px;
 }
 .article__title {
@@ -144,9 +146,7 @@
   color: var(--accent-title-color);
 }
 .article__block__title {
-  color: var(--subtitle-text-color);
-  font-weight: bold;
-  font-size: 18px;
+  /* Исправил */
   margin-bottom: 20px;
 }
 .article__block__title:not(:last-of-type) {
@@ -200,8 +200,8 @@
     inset-block-start: 22px;
   }
   .header__theme-menu-list {
-    margin-block-start:173px;
-}
+    margin-block-start: 173px;
+  }
   .header__title {
     /* Сделанно */
     inset-inline-start: -20px;
@@ -234,7 +234,7 @@
     margin-top: 0px;
   }
   .content__text {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
   }
   .article__title {
     margin-bottom: 20px;
@@ -290,12 +290,10 @@
   .content__part {
     column-gap: 10px;
   }
-
   .content__texts {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
-
   .footer__text {
     font-size: 157px;
   }

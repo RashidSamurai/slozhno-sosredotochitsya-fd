@@ -131,6 +131,7 @@
 }
 .pics {
   margin-top: 0px;
+  margin-bottom: 10px;
   /* Исправил */
 }
 .title-sm {
@@ -154,9 +155,6 @@
 }
 .content__texts {
   display: grid;
-}
-.pics {
-  margin-bottom: 10px;
 }
 .content-section_pics {
   display: grid;

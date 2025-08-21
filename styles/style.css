@@ -41,6 +41,7 @@
 }
 .header__theme-menu-button:hover {
   border: 1px solid var(--button-hover-color);
+  cursor: pointer;
 }
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-title-color);
@@ -116,6 +117,7 @@
   padding-inline: 10px;
 }
 .content__text {
+  cursor: pointer;
   padding-top: 10px;
   text-decoration: none;
   color: var(--main-text-color);
@@ -123,6 +125,16 @@
 .accnet__text {
   text-shadow: 2px 2px 0 var(--text-shadow-color);
   text-decoration: none;
+}
+.accnet__text:hover {
+  border-block-end: 1px solid currentColor;
+  cursor: pointer;
+}
+.accnet__text:focus {
+  outline: none;
+}
+.accnet__text:focus-visible {
+  outline: 1px solid currentColor;
 }
 .content__text__title {
   font-size: 18px;
